@@ -1,13 +1,16 @@
 # docker-tomcat-tutorial
 A basic tutorial on running a web app on Tomcat using Docker
 
-# Steps
-* Install [Docker](https://docs.docker.com/install/).
-* Clone this repository - $git clone https://github.com/softwareyoga/docker-tomcat-tutorial.git
-* cd 'docker-tomcat-tutorial'
-* $docker build -t mywebapp .
-* $docker run -p 80:8080 mywebapp
-* http://localhost:80
+Steps:
+1. Go to  https://labs.play-with-docker.com/
+and Add a new instance.
 
-# Links
-[Sample Tomcat web app](https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/)
+2. git clone  https://github.com/dieterjava/docker-tomcat-tutorial
+
+3. docker image build --tag $DOCKERID/tomcat-webapp:3.0 .
+
+docker container run  --detach  --publish 8080:8080  $DOCKERID/tomcat-webapp:3.0
+
+4. Click on button "8080" 
+5. Add  :8080/sample  to URL opened.
+

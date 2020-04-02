@@ -1,7 +1,8 @@
-FROM tomcat:8.0-alpine
-LABEL maintainer="deepak@softwareyoga.com"
+FROM tomcat:latest
+
+LABEL maintainer="dh@dh.de"
 
 ADD sample.war /usr/local/tomcat/webapps/
 
-EXPOSE 8080
+EXPOSE 8080 8080
 CMD ["catalina.sh", "run"]
